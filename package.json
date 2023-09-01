@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
+    "commit": "cz",
     "semantic-release": "semantic-release --branches main"
   },
   "author": "Darko Anojcic",
@@ -14,6 +15,12 @@
     "url": "https://github.com/DarkoAnojcic/npm-package.git"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "semantic-release": "^21.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
