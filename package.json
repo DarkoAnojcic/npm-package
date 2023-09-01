@@ -1,11 +1,19 @@
 {
   "name": "qartz-reporter",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+    "semantic-release": "semantic-release --branches main"
   },
   "author": "Darko Anojcic",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DarkoAnojcic/npm-package.git"
+  },
+  "devDependencies": {
+    "semantic-release": "^21.1.1"
+  }
 }
