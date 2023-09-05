@@ -47,10 +47,12 @@
 
 "use strict";
 
-import {packageDirectory} from 'pkg-dir';
+// import {packageDirectory} from 'pkg-dir';
+// const packageDirectory = require("pkg-dir");
 
 async function getPath() {
-    console.log(await packageDirectory());
+    const packageDirectory = await import("pkg-dir");
+    console.log(await packageDirectory.packageDirectory());
 }
 
 module.exports = {
