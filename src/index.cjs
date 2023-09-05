@@ -52,7 +52,13 @@
 
 async function getPath() {
     const packageDirectory = await import("pkg-dir");
-    console.log(await packageDirectory.packageDirectory());
+    const fs = require('fs');
+    const rootPath = await packageDirectory.packageDirectory();
+    const filePath = "/reports/cucumber_report.json";
+    let rawdata = fs.readFileSync(rootPath + filePath);
+    let data = JSON.parse(rawdata);
+
+    console.log(data);
 }
 
 module.exports = {
