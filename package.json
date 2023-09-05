@@ -2,7 +2,7 @@
   "name": "qartz-reporter",
   "version": "0.0.0-development",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/index.cjs",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
